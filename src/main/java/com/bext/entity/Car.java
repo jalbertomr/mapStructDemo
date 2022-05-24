@@ -1,12 +1,13 @@
 package com.bext.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import com.bext.enums.FuelType;
+import lombok.*;
 
-@Setter
-@Getter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Car {
     private int id;
     private String name;
+    private FuelType fuelType;
 }

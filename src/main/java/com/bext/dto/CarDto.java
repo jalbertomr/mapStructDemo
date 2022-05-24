@@ -1,11 +1,9 @@
 package com.bext.dto;
 
+import com.bext.enums.FuelType;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
+@Data
 public class CarDto {
     private int id;
     private String name;

@@ -12,6 +12,18 @@ Each time the mapper class is saved (@Mapper), mapStrut generates the source cod
 To work with lombok in the pom file the plugin is like this
 
     <plugin>
+        <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-maven-plugin</artifactId>
+           <configuration>
+              <excludes>
+                 <exclude>
+                   <groupId>org.projectlombok</groupId>
+                   <artifactId>lombok</artifactId>
+                 </exclude>
+              </excludes>
+           </configuration>
+    </plugin>
+    <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.5.1</version>
