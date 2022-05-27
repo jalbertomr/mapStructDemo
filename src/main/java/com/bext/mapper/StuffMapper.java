@@ -4,7 +4,6 @@ import com.bext.dto.FurryStuff;
 import com.bext.enums.SlimeType;
 import com.bext.dto.SlimyStuff;
 import com.bext.enums.FurType;
-import com.bext.mapConverter.DateMapper;
 import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 

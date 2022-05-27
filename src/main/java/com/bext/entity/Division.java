@@ -5,10 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Title {
-    private long id;
+@NoArgsConstructor
+public class Division {
+    private int id;
     private String name;
-    private String university;
 }

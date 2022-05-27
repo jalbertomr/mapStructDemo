@@ -1,14 +1,14 @@
-package com.bext.entity;
+package com.bext.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Title {
-    private long id;
+@NoArgsConstructor
+public class DivisionDto {
+    private int id;
     private String name;
-    private String university;
+    private String zone;
 }

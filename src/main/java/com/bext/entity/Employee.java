@@ -4,11 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Title {
+public class Employee {
     private long id;
-    private String name;
-    private String university;
+    private String firstName;
+    private String lastName;
+    private Division division;
+    private Date startDate;
 }
