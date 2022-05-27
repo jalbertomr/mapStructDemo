@@ -21,7 +21,7 @@ class EmployeeMapperTest {
     void mapEmployeeTest() throws ParseException {
         //given
         Division division = new Division(1, "North");
-        Date startDate = new SimpleDateFormat("YYYY-mm-dd HH:mm:ss").parse("2022-06-01 09:00:05");
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-06-01 09:00:05");
         Employee employee = new Employee( 23, "Jose Alberto", "Martinez", division, startDate);
         //when
         EmployeeDto employeeDto = EmployeeMapper.INSTANCE.employeeToDto(employee);
@@ -54,7 +54,7 @@ class EmployeeMapperTest {
     void employeesListToDto() throws ParseException {
         //given
         Division division = new Division(1, "North");
-        Date startDate = new SimpleDateFormat("YYYY-mm-dd HH:mm:ss").parse("2022-06-01 09:00:05");
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-06-01 09:00:05");
         Employee employee = new Employee(33L, "Jose Alberto", "Martinez", division, startDate);
         List<Employee> employees = new ArrayList<>();
         employees.add(employee);
@@ -74,7 +74,7 @@ class EmployeeMapperTest {
     void employeesSetToDto() throws ParseException {
         //given
         Division division = new Division(1, "North");
-        Date startDate = new SimpleDateFormat("YYYY-mm-dd HH:mm:ss").parse("2022-06-01 09:00:05");
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-06-01 09:00:05");
         Employee employee = new Employee(33L, "Jose Alberto", "Martinez", division, startDate);
         Set<Employee> employeesSet = new HashSet<>();
         employeesSet.add( employee);
@@ -91,7 +91,7 @@ class EmployeeMapperTest {
     void employeesMaoToDto() throws ParseException {
         //given
         Division division = new Division(1, "North");
-        Date startDate = new SimpleDateFormat("YYYY-mm-dd HH:mm:ss").parse("2022-06-01 09:00:05");
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2022-06-01 09:00:05");
         Employee employee = new Employee(33L, "Jose Alberto", "Martinez", division, startDate);
         Map<String,Employee> employeesMap = new HashMap<>();
         employeesMap.put("emp1" ,employee);
